@@ -1,0 +1,104 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Cuerpo */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #23be71, #e9ecef);
+    min-height: 100vh;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #343a40;
+}
+
+/* Contenedor principal más pequeño */
+.container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    width: 200%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Estilo para las tareas completadas */
+.completed .todo-text {
+    text-decoration: line-through;
+    color: #6c757d;
+}
+
+/* Otros estilos */
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #212529;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+input[type="text"], input[type="date"], button {
+    width: 100%;
+    padding: 10px 15px;
+    border: 1px solid #ced4da;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #007e34;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #57bd8d;
+}
+
+#todo-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.todo-item {
+    background-color: #f8f9fa;
+    border-left: 5px solid #0dfd85;
+    padding: 15px 20px;
+    border-radius: 6px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.todo-text {
+    font-size: 16px;
+}
+
+.todo-date {
+    font-size: 14px;
+    color: #6c757d;
+}
+
+.todo-actions {
+    display: flex;
+    gap: 10px;
+}
+
+@media (max-width: 600px) {
+    /* Ajustes en pantallas pequeñas si es necesario */
+}
