@@ -84,17 +84,17 @@ function render() {
 
 
         const toggleBtn = document.createElement("button");
-        toggleBtn.innerText = todo.completed ? "Undo" : "Complete";
+        toggleBtn.innerText = todo.completed ? "Desmarcar" : "Completado";
         toggleBtn.onclick = () => toggleCompletion(index);
 
 
         const deleteBtn = document.createElement("button");
-        deleteBtn.innerText = "Delete";
+        deleteBtn.innerText = "Eliminar";
         deleteBtn.onclick = () => deleteTodo(index);
 
 
         const editBtn = document.createElement("button");
-        editBtn.innerText = "Edit";
+        editBtn.innerText = "Editar";
         editBtn.onclick = () => editTodo(index);
 
         actions.appendChild(toggleBtn);
